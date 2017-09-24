@@ -18,6 +18,27 @@ myApp.onPageInit('about', function (page) {
     });
 });
 
+// 1 Slide Per View, 50px Between
+var mySwiper1 = myApp.swiper('.swiper-1', {
+  pagination:'.swiper-1 .swiper-pagination',
+  spaceBetween: 50
+});
+
+var mySwiper2 = myApp.swiper('.swiper-2', {
+  pagination:'.swiper-2 .swiper-pagination',
+  slidesPerView: 4,
+	centeredSlides: true,
+	paginationClickable: true,
+	spaceBetween: 10
+});
+
+// 1 Slide Per View, 50px Between
+var mySwiper3 = myApp.swiper('.swiper-3', {
+  pagination:'.swiper-3 .swiper-pagination',
+  spaceBetween: 50
+});
+
+
 // Generate dynamic page
 var dynamicPageIndex = 0;
 function createContentPage() {
